@@ -1,5 +1,5 @@
-cmake_minimum_required(VERSION 3.0.2)
-project( MysqlConenctor )
+cmake_minimum_required( VERSION 3.0.2 )
+project( MysqlConnector )
 
 
 file( GLOB UTILS_PUBLIC_INCLUDE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*" )
@@ -9,6 +9,6 @@ set( CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR} )
 
 add_library( mysqlConnector ${UTILS_PUBLIC_INCLUDE_FILES} ${UTILS_SOURCE_FILES} )
 
-target_include_directories( mysqlConnector PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} )
+target_include_directories( mysqlConnector PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${Boost_INCLUDE_DIR} )
 
 target_link_libraries( mysqlConnector mysql )
