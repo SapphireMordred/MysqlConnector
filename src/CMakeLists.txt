@@ -1,7 +1,6 @@
 cmake_minimum_required( VERSION 3.0.2 )
 project( MysqlConnector )
 
-
 file( GLOB UTILS_PUBLIC_INCLUDE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/*" )
 file( GLOB UTILS_SOURCE_FILES "${CMAKE_CURRENT_SOURCE_DIR}/src/*" )
 
