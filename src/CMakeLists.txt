@@ -12,3 +12,5 @@ add_library( mysqlConnector ${UTILS_PUBLIC_INCLUDE_FILES} ${UTILS_SOURCE_FILES} 
 target_include_directories( mysqlConnector PUBLIC ${CMAKE_CURRENT_SOURCE_DIR} ${Boost_INCLUDE_DIR} )
 
 target_link_libraries( mysqlConnector mysql )
+
+install( DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR}/bin/ DESTINATION lib USE_SOURCE_PERMISSIONS FILES_MATCHING PATTERN "*.lib*" )

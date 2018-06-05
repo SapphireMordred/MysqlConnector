@@ -6,6 +6,7 @@
 #include <vector>
 #include <boost/scoped_array.hpp>
 #include <boost/make_shared.hpp>
+#include <mysql.h>
 
 Mysql::Connection::Connection( boost::shared_ptr< MySqlBase > pBase,
                                const std::string& hostName, 

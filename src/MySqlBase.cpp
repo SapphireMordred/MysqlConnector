@@ -1,6 +1,7 @@
 #include "MySqlBase.h"
 #include "Connection.h"
 #include <boost/make_shared.hpp>
+#include <mysql.h>
 
 Mysql::MySqlBase::MySqlBase() 
 {

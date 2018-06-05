@@ -7,7 +7,10 @@
 #include <vector>
 
 #include "ResultSetBase.h"
-#include <mysql.h>
+
+struct MYSQL_RES;
+struct MYSQL_FIELD;
+typedef char **MYSQL_ROW;
 
 namespace Mysql
 {

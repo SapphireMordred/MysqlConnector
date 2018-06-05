@@ -4,13 +4,13 @@
 #include <boost/shared_ptr.hpp>
 #include <boost/scoped_ptr.hpp>
 #include <boost/enable_shared_from_this.hpp>
-#include <mysql.h>
 #include <map>
 
+struct MYSQL;
 
 namespace Mysql
 {
-   using optionMap = std::map< enum mysql_option, std::string >;
+   using optionMap = std::map< enum mysqlOption, std::string >;
    class MySqlBase;
    class Statement;
    class PreparedStatement;
