@@ -8,8 +8,8 @@
 
 #include "ResultSetBase.h"
 
-struct MYSQL_RES;
-struct MYSQL_FIELD;
+typedef struct st_mysql_res MYSQL_RES;
+typedef struct st_mysql_field MYSQL_FIELD;
 typedef char **MYSQL_ROW;
 
 namespace Mysql

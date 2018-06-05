@@ -7,7 +7,7 @@
 #include "Statement.h"
 
 
-struct MYSQL_STMT;
+typedef struct st_mysql_stmt MYSQL_STMT;
 
 namespace Mysql
 {

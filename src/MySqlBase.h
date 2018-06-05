@@ -22,7 +22,7 @@ enum mysqlOption
    MYSQL_OPT_SSL_VERIFY_SERVER_CERT
 };
 
-using optionMap = std::map< enum mysqlOption, std::string >;
+using optionMap = std::map< mysqlOption, std::string >;
 
 class Connection;
 
