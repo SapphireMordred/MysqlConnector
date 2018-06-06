@@ -5,7 +5,9 @@
 #include <boost/shared_ptr.hpp>
 #include <boost/enable_shared_from_this.hpp>
 #include "Statement.h"
-#include <mysql.h>
+
+
+typedef struct st_mysql_stmt MYSQL_STMT;
 
 namespace Mysql
 {

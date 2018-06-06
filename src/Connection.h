@@ -4,13 +4,14 @@
 #include <boost/shared_ptr.hpp>
 #include <boost/scoped_ptr.hpp>
 #include <boost/enable_shared_from_this.hpp>
-#include <mysql.h>
 #include <map>
+#include "MySqlBase.h"
 
+typedef struct st_mysql MYSQL;
 
 namespace Mysql
 {
-   using optionMap = std::map< enum mysql_option, std::string >;
+   using optionMap = std::map< mysqlOption, std::string >;
    class MySqlBase;
    class Statement;
    class PreparedStatement;
@@ -38,9 +39,9 @@ namespace Mysql
 
       bool ping();
       
-      void setOption( enum mysql_option option, const void* arg );
-      void setOption( enum mysql_option option, uint32_t arg );
-      void setOption( enum mysql_option option, const std::string& arg );
+      void setOption( enum mysqlOption option, const void* arg );
+      void setOption( enum mysqlOption option, uint32_t arg );
+      void setOption( enum mysqlOption option, const std::string& arg );
 
       boost::shared_ptr< MySqlBase > getMySqlBase() const;
 

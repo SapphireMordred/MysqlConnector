@@ -7,6 +7,7 @@
 #include <vector>
 #include <boost/scoped_ptr.hpp>
 #include <string.h>
+#include <mysql.h>
 
 Mysql::ResultSet::ResultSet( MYSQL_RES* res, boost::shared_ptr< Mysql::Statement > par )
 {
